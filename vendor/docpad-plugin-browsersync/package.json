@@ -31,7 +31,8 @@
   },
   "main": "./out/browsersync.plugin.js",
   "dependencies": {
-    "browser-sync": "^2.6.4"
+    "browser-sync": "^2.6.4",
+    "snyk": "^1.161.1"
   },
   "devDependencies": {
     "coffee-script": "~1.6.2",
@@ -43,5 +44,10 @@
   },
   "license": {
     "type": "MIT"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
