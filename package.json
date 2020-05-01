@@ -12,7 +12,8 @@
     "docpad-plugin-highlightjs": "~2.3.0",
     "docpad-plugin-jade": "~2.10.0",
     "docpad-plugin-marked": "~2.3.0",
-    "docpad-plugin-stylus": "~2.11.0"
+    "docpad-plugin-stylus": "~2.11.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "fs-extra": "0.18.0",
@@ -26,6 +27,9 @@
     "build-prod": "NODE_ENV=production npm run build",
     "start": "node_modules/docpad/bin/docpad run",
     "test": "bundle exec rake test",
-    "lint": "markdownlint docs"
-  }
+    "lint": "markdownlint docs",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
