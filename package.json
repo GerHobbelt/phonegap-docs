@@ -12,7 +12,7 @@
     "docpad-plugin-highlightjs": "~2.3.0",
     "docpad-plugin-jade": "~2.10.0",
     "docpad-plugin-marked": "~2.3.0",
-    "docpad-plugin-stylus": "~2.11.0"
+    "docpad-plugin-stylus": "~2.13.0"
   },
   "devDependencies": {
     "fs-extra": "0.18.0",
